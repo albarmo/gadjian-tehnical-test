@@ -1,5 +1,6 @@
 import axios from "axios";
 
+// fetching and dispatch employee reducer
 export const getEmployeeData = () => {
   return (dispatch) => {
     axios({

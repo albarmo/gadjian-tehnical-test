@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 20px;
   border: none;
   overflow: hidden;
 }
@@ -38,4 +38,35 @@
 .card-biodata label {
   font-weight: bold;
   color: rgb(110, 110, 110);
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row !important;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  .card-personel-id {
+    align-self: inherit;
+    position: absolute;
+    align-self: flex-start;
+  }
+
+  .card-biodata {
+    width: 400px;
+    height: auto;
+    line-height: 90%;
+    margin-left: 20px;
+    font-size: normal;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
 }

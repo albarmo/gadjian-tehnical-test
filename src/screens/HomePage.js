@@ -10,8 +10,11 @@ import { Spinner } from "react-bootstrap";
 const HomePage = () => {
   const dispatch = useDispatch();
   const employee = useSelector((state) => state.employee);
+
+  //search input to match with data => name.first
   const [search, setSearch] = useState("");
 
+  // pagination state
   const [currentPage, setCurrentPage] = useState(1);
   const [dataDisplayPerPage, setDataDisplaypage] = useState(4);
 
@@ -21,10 +24,12 @@ const HomePage = () => {
     setDataDisplaypage(4);
   }, []);
 
+  // update currentPage pagination
   const nextHandler = () => {
     setCurrentPage(currentPage + 1);
   };
 
+  // update currentPage pagination
   const prevoriousHandler = () => {
     if (currentPage !== 0 && currentPage !== 1) {
       setCurrentPage(currentPage - 1);
@@ -44,11 +49,11 @@ const HomePage = () => {
   });
 
   // search employee
-
   let dataSearchByFirstname = employee.filter((val) => {
     return (
       val.name.first.toLowerCase().includes(search.toLowerCase()) &&
-      search !== ""
+      search !== "" &&
+      search.length > 1
     );
   });
 

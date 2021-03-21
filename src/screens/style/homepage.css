@@ -80,3 +80,68 @@
 .card-controls p:hover {
   font-weight: bold;
 }
+
+/* for mobile phone */
+@media only screen and (max-width: 600px) {
+  .homepage {
+    background-color: #f0eeeef5;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .homepage-content {
+    width: 100%;
+    padding: 3%;
+    text-align: left;
+    height: auto;
+  }
+
+  .header-content {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 2px;
+  }
+
+  .header-content h2 {
+    font-size: 2rem;
+  }
+
+  .content-controls {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100px;
+    justify-content: space-around;
+  }
+
+  .content-controls input {
+    margin-right: 0px;
+  }
+
+  .content-card-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card-controls {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .card-controls p {
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  .card-controls p:hover {
+    font-weight: bold;
+  }
+}

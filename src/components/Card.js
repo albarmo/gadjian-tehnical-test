@@ -26,13 +26,13 @@ const CardComponent = ({ employee }) => {
           </p>
           <label>Telephone</label>
           <p>{employee.cell}</p>
-          <label>Birthday</label>
-          <p>
+          <label className="hide-mobile">Birthday</label>
+          <p className="hide-mobile">
             {employee.dob.date.slice(8, 10)} / {employee.dob.date.slice(5, 7)} /
             {employee.dob.date.slice(0, 4)}
           </p>
-          <label>Email</label>
-          <p>{employee.email}</p>
+          <label className="hide-mobile">Email</label>
+          <p className="hide-mobile">{employee.email}</p>
         </div>
       </div>
     </>
