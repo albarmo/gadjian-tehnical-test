@@ -1,0 +1,24 @@
+.sidebar {
+  height: 700px;
+  width: 20%;
+  background-color: white;
+  padding: 2%;
+  padding-top: 5%;
+  text-align: left;
+}
+.sidebar h5 {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: medium;
+  display: flex;
+  justify-content: baseline;
+  cursor: pointer;
+}
+
+.sidebar h5:hover {
+  color: #33bdbf;
+}
+
+.sidebar span {
+  margin-left: 10px;
+}

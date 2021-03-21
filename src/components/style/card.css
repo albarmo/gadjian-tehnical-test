@@ -1,0 +1,41 @@
+.card {
+  width: 23%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  overflow: hidden;
+}
+.card-personel-id {
+  width: 90%;
+  text-align: center;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: gray;
+  font-size: 12px;
+}
+
+.card-personel-id span {
+  color: #33bdbf;
+}
+
+.card Image {
+  width: 20px;
+}
+
+.card-biodata {
+  width: 85%;
+  line-height: 70%;
+  margin-top: 20px;
+  font-size: small;
+  color: gray;
+}
+
+.card-biodata label {
+  font-weight: bold;
+  color: rgb(110, 110, 110);
+}
